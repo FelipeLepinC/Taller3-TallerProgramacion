@@ -19,7 +19,7 @@ object SplitterSinHumedad {
     val productor = session.createProducer(cola)
     val productor2 = session.createProducer(cola2)
 
-    productor()
+    //productor()
   }
   def main(args: Array[String], message: Message): Unit = {
 
