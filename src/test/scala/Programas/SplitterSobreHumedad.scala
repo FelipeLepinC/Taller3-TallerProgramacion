@@ -5,7 +5,7 @@ import org.apache.activemq.ActiveMQConnectionFactory
 
 import java.util.Calendar
 
-object SplitterSinHumedad {
+object SplitterSobreHumedad {
   val activeMqUrl: String = "tcp://localhost:61616"
   def replicar(message: Message): Unit ={
     System.setProperty ("org.apache.activemq.SERIALIZABLE_PACKAGES", "*")
@@ -15,8 +15,8 @@ object SplitterSinHumedad {
     connection.start()
 
     val session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE)
-    val cola = session.createQueue("estadoHumidificador")
-    val cola2 = session.createQueue("regSinHumedad")
+    val cola = session.createQueue("estadoExtractor")
+    val cola2 = session.createQueue("regSobreHumedad")
 
     val productor = session.createProducer(cola)
     val productor2 = session.createProducer(cola2)
@@ -25,12 +25,12 @@ object SplitterSinHumedad {
     val objMedicion: ObjectMessage = session.createObjectMessage()
     objMedicion.setObject(medicion)
     productor.send(objMedicion)
-    println("Señal de Encendido del Humidificador enviada")
-    
-    val registro = new Registro(info = "Poca humedad en el ambiente, se enciende el humidificador", fecha = Calendar.getInstance().getTime)
+    println("Señal de Encendido del Extractor enviada")
+
+    val registro = new Registro(info = "Hay mucha humedad en el ambiente, se enciende el extractor", fecha = Calendar.getInstance().getTime)
     val objRegistro: ObjectMessage = session.createObjectMessage()
     objRegistro.setObject(registro)
     productor2.send(objRegistro)
-    println("Registro de Encendido de Humidificador enviado")
+    println("Registro de Encendido del Extractor enviado")
   }
 }

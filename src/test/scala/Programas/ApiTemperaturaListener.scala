@@ -2,7 +2,7 @@ package Programas
 
 import javax.jms._
 import org.apache.activemq.ActiveMQConnectionFactory
-import Programas.SensorTemperatura.activeMqUrl
+import .activeMqUrl
 
 object ApiTemperaturaListener {
   val activeMqUrl: String = "tcp://localhost:61616"
