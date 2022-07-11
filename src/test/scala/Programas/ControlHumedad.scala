@@ -3,8 +3,7 @@ package Programas
 import javax.jms._
 import org.apache.activemq.ActiveMQConnectionFactory
 import org.apache.activemq.command.ActiveMQObjectMessage
-import Programas.SensorHumedad.activeMqUrl
-import org.apache.activemq
+
 
 object ControlHumedad {
   val activeMqUrl: String = "tcp://localhost:61616"
@@ -30,30 +29,22 @@ object ControlHumedad {
           case obj: ObjectMessage => {
             val queueMessage = obj.asInstanceOf[ActiveMQObjectMessage]
             val payload = queueMessage.getObject().asInstanceOf[DatosSensor]
+            val porcentaje: Int = payload.getHumedad()
 
-            val humedad: Int = payload.getHumedad()
-            val fecha = payload.getFecha()
+            if(porcentaje < limiteInferior){
+              //Mandar a sin humedad
+              println(s"Baja humedad: $porcentaje%")
+              println("Enviado a splitter Sin Humedad")
+              SplitterSinHumedad.replicar(obj)
 
-            val session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE)
-
-            val data = new DatosControl(humedad, fecha)
-            if(humedad < limiteInferior){
-              println(s"Baja humedad: $humedad%")
-              val cola = session.createQueue("SinHumedad")
-              val productor = session.createProducer(cola)
-              val obj: ObjectMessage = session.createObjectMessage(data)
-              productor.send(obj)
-
-
-            }else if(humedad > limiteSuperior){
-              println(s"Sobre humedad: $humedad%")
-              val cola = session.createQueue("SobreHumedad")
-              val productor = session.createProducer(cola)
-              val obj: ObjectMessage = session.createObjectMessage(data)
-              productor.send(obj)
+            }else if(porcentaje > limiteSuperior){
+              // Mandar a sobre humedad
+              println(s"Sobre humedad: $porcentaje%")
+              println("Enviado a splitter Sobre Humedad")
+              SplitterSobreHumedad.replicar(obj)
 
             }else{
-              println(s"Humedad normal: $humedad%")
+              println(s"Humedad normal: $porcentaje%")
             }
           }
           case _ => {

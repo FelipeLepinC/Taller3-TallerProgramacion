@@ -14,11 +14,9 @@ class DatosSensor() extends Serializable {
   }
 }
 
-class DatosControl(val humedad: Int, val fecha: LocalDateTime) extends Serializable{
-  def getHumedad(): Int ={
-    return humedad
-  }
-  def getFecha(): LocalDateTime ={
-    return fecha
+class SeñalEstado(val flagEstado: Boolean) extends Serializable {
+  def getFlagEstado(): Boolean ={
+    return this.flagEstado
   }
 }
+
