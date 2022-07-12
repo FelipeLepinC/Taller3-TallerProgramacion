@@ -3,8 +3,7 @@ package Programas
 import javax.jms._
 import org.apache.activemq.ActiveMQConnectionFactory
 import org.apache.activemq.command.ActiveMQObjectMessage
-import Programas.SensorHumedad.activeMqUrl
-import org.apache.activemq
+
 
 object ControlHumedad {
   val activeMqUrl: String = "tcp://localhost:61616"
@@ -21,26 +20,31 @@ object ControlHumedad {
     val consumidor = session.createConsumer(cola)
     println("Conexion creada")
 
-    val limiteInferior: Int = 25
-    val limiteSuperior: Int = 75
+    val limiteInferior: Int = 45
+    val limiteSuperior: Int = 55
+
     val listener = new MessageListener {
       def onMessage(message: Message): Unit = {
         message match {
           case obj: ObjectMessage => {
             val queueMessage = obj.asInstanceOf[ActiveMQObjectMessage]
-            val payload = queueMessage.getObject().asInstanceOf[Datos]
-            val porcentaje: Int = payload.getDato()
-
-            val session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE)
-            val cola = session.createQueue(datos(0))
-            val productor = session.createProducer(cola)
+            val payload = queueMessage.getObject().asInstanceOf[DatosSensor]
+            val porcentaje: Int = payload.getHumedad()
 
             if(porcentaje < limiteInferior){
-              //Mandar
+              //Mandar a sin humedad
+              println(s"Baja humedad: $porcentaje%")
+              println("Enviado a splitter Sin Humedad")
+              SplitterSinHumedad.replicar(obj)
+
             }else if(porcentaje > limiteSuperior){
+              // Mandar a sobre humedad
+              println(s"Sobre humedad: $porcentaje%")
+              println("Enviado a splitter Sobre Humedad")
+              SplitterSobreHumedad.replicar(obj)
 
             }else{
-
+              println(s"Humedad normal: $porcentaje%")
             }
           }
           case _ => {

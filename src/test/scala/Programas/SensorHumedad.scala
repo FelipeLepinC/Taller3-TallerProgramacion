@@ -2,8 +2,10 @@ package Programas
 
 import javax.jms._
 import org.apache.activemq.ActiveMQConnectionFactory
+import java.time.LocalDateTime
 
 object SensorHumedad {
+
   val activeMqUrl: String = "tcp://localhost:61616"
   def main(args: Array[String]): Unit = {
     System.setProperty ("org.apache.activemq.SERIALIZABLE_PACKAGES", "*")
@@ -15,18 +17,15 @@ object SensorHumedad {
     val session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE)
     val cola = session.createQueue("medicionHumedad")
     println("Conexion y cola creada")
+
     val productor = session.createProducer(cola)
+    val data = new DatosSensor()
+    val obj: ObjectMessage = session.createObjectMessage(data)
 
-    val data = new Datos(20)
-    val obj: ObjectMessage = session.createObjectMessage()
-    obj.setObject(data)
-
-    val ser: Datos = obj.getObject().asInstanceOf[Datos]
+    //val ser: DatosSensor = obj.getObject().asInstanceOf[DatosSensor]
     productor.send(obj)
     println("Mensaje enviado")
     connection.close()
 
-    //var thread = new MainThread(uuid)
-    //thread.start()
   }
 }

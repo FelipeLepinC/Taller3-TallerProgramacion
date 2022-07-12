@@ -1,0 +1,447 @@
+2022-07-03 17:59:24,096 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\alvar\Downloads\Universidad\Taller proga\apache-activemq-5.17.1-bin\apache-activemq-5.17.1\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2022-07-03 17:59:24,501 | INFO  | PListStore:[C:\Users\alvar\Downloads\Universidad\Taller proga\apache-activemq-5.17.1-bin\apache-activemq-5.17.1\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2022-07-03 17:59:24,662 | INFO  | Apache ActiveMQ 5.17.1 (localhost, ID:LAPTOP-IC8OJGTR-53426-1656885564522-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2022-07-03 17:59:24,682 | INFO  | Listening for connections at: tcp://LAPTOP-IC8OJGTR:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2022-07-03 17:59:24,683 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2022-07-03 17:59:24,687 | INFO  | Listening for connections at: amqp://LAPTOP-IC8OJGTR:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2022-07-03 17:59:24,688 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2022-07-03 17:59:24,691 | INFO  | Listening for connections at: stomp://LAPTOP-IC8OJGTR:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2022-07-03 17:59:24,692 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2022-07-03 17:59:24,696 | INFO  | Listening for connections at: mqtt://LAPTOP-IC8OJGTR:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2022-07-03 17:59:24,697 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2022-07-03 17:59:24,702 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2022-07-03 17:59:24,765 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2022-07-03 17:59:24,813 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@44b18fe4{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2022-07-03 17:59:25,050 | INFO  | Listening for connections at ws://LAPTOP-IC8OJGTR:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2022-07-03 17:59:25,051 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2022-07-03 17:59:25,052 | INFO  | Apache ActiveMQ 5.17.1 (localhost, ID:LAPTOP-IC8OJGTR-53426-1656885564522-0:1) started | org.apache.activemq.broker.BrokerService | main
+2022-07-03 17:59:25,055 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2022-07-03 17:59:25,066 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\alvar\Downloads\Universidad\Taller proga\apache-activemq-5.17.1-bin\apache-activemq-5.17.1\bin\..\data\kahadb only has 49698 mb of usable space. - resetting to maximum available disk space: 49698 mb | org.apache.activemq.broker.BrokerService | main
+2022-07-03 17:59:25,069 | WARN  | Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: C:\Users\alvar\Downloads\Universidad\Taller proga\apache-activemq-5.17.1-bin\apache-activemq-5.17.1\bin\..\data only has 49698 mb of usable space. - resetting to maximum available disk space: 49698 mb | org.apache.activemq.broker.BrokerService | main
+2022-07-03 17:59:25,836 | INFO  | ActiveMQ WebConsole available at http://127.0.0.1:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2022-07-03 17:59:25,836 | INFO  | ActiveMQ Jolokia REST API available at http://127.0.0.1:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2022-07-03 17:59:26,358 | WARN  | jolokia-agent: Error while accessing access restrictor at file:C:UsersalvarDownloadsUniversidadTaller progaapache-activemq-5.17.1-binapache-activemq-5.17.1bin..conf/jolokia-access.xml. Denying all access to MBeans for security reasons. Exception: java.io.FileNotFoundException: C:UsersalvarDownloadsUniversidadTaller progaapache-activemq-5.17.1-binapache-activemq-5.17.1bin..conf\jolokia-access.xml (El sistema no puede encontrar la ruta especificada) | org.eclipse.jetty.server.handler.ContextHandler.api | main
+java.io.FileNotFoundException: C:UsersalvarDownloadsUniversidadTaller progaapache-activemq-5.17.1-binapache-activemq-5.17.1bin..conf\jolokia-access.xml (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.base/java.net.URL.openStream(URL.java:1162)
+	at org.jolokia.restrictor.RestrictorFactory.lookupPolicyRestrictor(RestrictorFactory.java:119)
+	at org.jolokia.restrictor.RestrictorFactory.createRestrictor(RestrictorFactory.java:50)
+	at org.jolokia.http.AgentServlet.createRestrictor(AgentServlet.java:195)
+	at org.jolokia.http.AgentServlet.init(AgentServlet.java:135)
+	at org.eclipse.jetty.servlet.ServletHolder$Wrapper.init(ServletHolder.java:1345)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:632)
+	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:415)
+	at org.eclipse.jetty.servlet.ServletHandler.lambda$initialize$0(ServletHandler.java:731)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:755)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:379)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1449)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1414)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:916)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:288)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:524)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.security.SecurityHandler.doStart(SecurityHandler.java:411)
+	at org.eclipse.jetty.security.ConstraintSecurityHandler.doStart(ConstraintSecurityHandler.java:417)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.server.Server.start(Server.java:423)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:387)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:283)
+	at org.springframework.beans.factory.config.MethodInvokingBean.invokeWithTargetException(MethodInvokingBean.java:123)
+	at org.springframework.beans.factory.config.MethodInvokingFactoryBean.afterPropertiesSet(MethodInvokingFactoryBean.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:64)
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:52)
+	at org.apache.activemq.xbean.XBeanBrokerFactory$1.<init>(XBeanBrokerFactory.java:104)
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createApplicationContext(XBeanBrokerFactory.java:104)
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createBroker(XBeanBrokerFactory.java:67)
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:71)
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:54)
+	at org.apache.activemq.console.command.StartCommand.runTask(StartCommand.java:87)
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:63)
+	at org.apache.activemq.console.command.ShellCommand.runTask(ShellCommand.java:154)
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:63)
+	at org.apache.activemq.console.command.ShellCommand.main(ShellCommand.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.activemq.console.Main.runTaskClass(Main.java:262)
+	at org.apache.activemq.console.Main.main(Main.java:115)
+2022-07-04 21:12:07,996 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\humificador\libs\apache-activemq-5.17.1\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2022-07-04 21:12:08,068 | INFO  | Page File: C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\humificador\libs\apache-activemq-5.17.1\bin\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown.. | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2022-07-04 21:12:08,074 | INFO  | KahaDB is version 7 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2022-07-04 21:12:08,074 | INFO  | Page File: C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\humificador\libs\apache-activemq-5.17.1\bin\..\data\kahadb\db.data. Recovered pageFile free list of size: 0 | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2022-07-04 21:12:08,269 | INFO  | PListStore:[C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\humificador\libs\apache-activemq-5.17.1\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2022-07-04 21:12:08,415 | INFO  | Apache ActiveMQ 5.17.1 (localhost, ID:LAPTOP-IC8OJGTR-50474-1656983528281-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2022-07-04 21:12:08,488 | INFO  | Listening for connections at: tcp://LAPTOP-IC8OJGTR:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2022-07-04 21:12:08,489 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2022-07-04 21:12:08,496 | INFO  | Listening for connections at: amqp://LAPTOP-IC8OJGTR:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2022-07-04 21:12:08,496 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2022-07-04 21:12:08,502 | INFO  | Listening for connections at: stomp://LAPTOP-IC8OJGTR:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2022-07-04 21:12:08,503 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2022-07-04 21:12:08,509 | INFO  | Listening for connections at: mqtt://LAPTOP-IC8OJGTR:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2022-07-04 21:12:08,509 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2022-07-04 21:12:08,518 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2022-07-04 21:12:08,588 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2022-07-04 21:12:08,646 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@30b131b2{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2022-07-04 21:12:08,888 | INFO  | Listening for connections at ws://LAPTOP-IC8OJGTR:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2022-07-04 21:12:08,888 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2022-07-04 21:12:08,889 | INFO  | Apache ActiveMQ 5.17.1 (localhost, ID:LAPTOP-IC8OJGTR-50474-1656983528281-0:1) started | org.apache.activemq.broker.BrokerService | main
+2022-07-04 21:12:08,893 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2022-07-04 21:12:08,903 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\humificador\libs\apache-activemq-5.17.1\bin\..\data\kahadb only has 47219 mb of usable space. - resetting to maximum available disk space: 47219 mb | org.apache.activemq.broker.BrokerService | main
+2022-07-04 21:12:08,907 | WARN  | Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\humificador\libs\apache-activemq-5.17.1\bin\..\data only has 47219 mb of usable space. - resetting to maximum available disk space: 47219 mb | org.apache.activemq.broker.BrokerService | main
+2022-07-04 21:12:09,600 | INFO  | ActiveMQ WebConsole available at http://127.0.0.1:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2022-07-04 21:12:09,601 | INFO  | ActiveMQ Jolokia REST API available at http://127.0.0.1:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2022-07-04 21:12:10,189 | WARN  | jolokia-agent: Error while accessing access restrictor at file:C:UsersalvarDownloadsUniversidadTaller progaTalleres grupaleshumificadorlibsapache-activemq-5.17.1bin..conf/jolokia-access.xml. Denying all access to MBeans for security reasons. Exception: java.io.FileNotFoundException: C:UsersalvarDownloadsUniversidadTaller progaTalleres grupaleshumificadorlibsapache-activemq-5.17.1bin..conf\jolokia-access.xml (El sistema no puede encontrar la ruta especificada) | org.eclipse.jetty.server.handler.ContextHandler.api | main
+java.io.FileNotFoundException: C:UsersalvarDownloadsUniversidadTaller progaTalleres grupaleshumificadorlibsapache-activemq-5.17.1bin..conf\jolokia-access.xml (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.base/java.net.URL.openStream(URL.java:1162)
+	at org.jolokia.restrictor.RestrictorFactory.lookupPolicyRestrictor(RestrictorFactory.java:119)
+	at org.jolokia.restrictor.RestrictorFactory.createRestrictor(RestrictorFactory.java:50)
+	at org.jolokia.http.AgentServlet.createRestrictor(AgentServlet.java:195)
+	at org.jolokia.http.AgentServlet.init(AgentServlet.java:135)
+	at org.eclipse.jetty.servlet.ServletHolder$Wrapper.init(ServletHolder.java:1345)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:632)
+	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:415)
+	at org.eclipse.jetty.servlet.ServletHandler.lambda$initialize$0(ServletHandler.java:731)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:755)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:379)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1449)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1414)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:916)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:288)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:524)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.security.SecurityHandler.doStart(SecurityHandler.java:411)
+	at org.eclipse.jetty.security.ConstraintSecurityHandler.doStart(ConstraintSecurityHandler.java:417)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.server.Server.start(Server.java:423)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:387)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:283)
+	at org.springframework.beans.factory.config.MethodInvokingBean.invokeWithTargetException(MethodInvokingBean.java:123)
+	at org.springframework.beans.factory.config.MethodInvokingFactoryBean.afterPropertiesSet(MethodInvokingFactoryBean.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:64)
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:52)
+	at org.apache.activemq.xbean.XBeanBrokerFactory$1.<init>(XBeanBrokerFactory.java:104)
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createApplicationContext(XBeanBrokerFactory.java:104)
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createBroker(XBeanBrokerFactory.java:67)
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:71)
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:54)
+	at org.apache.activemq.console.command.StartCommand.runTask(StartCommand.java:87)
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:63)
+	at org.apache.activemq.console.command.ShellCommand.runTask(ShellCommand.java:154)
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:63)
+	at org.apache.activemq.console.command.ShellCommand.main(ShellCommand.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.activemq.console.Main.runTaskClass(Main.java:262)
+	at org.apache.activemq.console.Main.main(Main.java:115)
+2022-07-04 21:13:05,517 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\humificador\libs\apache-activemq-5.17.1\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2022-07-04 21:13:05,540 | INFO  | Database C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\humificador\libs\apache-activemq-5.17.1\bin\..\data\kahadb\lock is locked by another server. This broker is now in slave mode waiting a lock to be acquired | org.apache.activemq.store.SharedFileLocker | main
+2022-07-04 22:10:15,794 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\Taller3-TallerProgramacion\lib\apache-activemq-5.17.1\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2022-07-04 22:10:15,889 | INFO  | Page File: C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\Taller3-TallerProgramacion\lib\apache-activemq-5.17.1\bin\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown.. | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2022-07-04 22:10:15,893 | INFO  | KahaDB is version 7 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2022-07-04 22:10:15,894 | INFO  | Page File: C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\Taller3-TallerProgramacion\lib\apache-activemq-5.17.1\bin\..\data\kahadb\db.data. Recovered pageFile free list of size: 0 | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2022-07-04 22:10:16,085 | INFO  | PListStore:[C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\Taller3-TallerProgramacion\lib\apache-activemq-5.17.1\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2022-07-04 22:10:16,229 | INFO  | Apache ActiveMQ 5.17.1 (localhost, ID:LAPTOP-IC8OJGTR-55681-1656987016094-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2022-07-04 22:10:16,307 | INFO  | Listening for connections at: tcp://LAPTOP-IC8OJGTR:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2022-07-04 22:10:16,307 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2022-07-04 22:10:16,317 | INFO  | Listening for connections at: amqp://LAPTOP-IC8OJGTR:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2022-07-04 22:10:16,318 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2022-07-04 22:10:16,324 | INFO  | Listening for connections at: stomp://LAPTOP-IC8OJGTR:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2022-07-04 22:10:16,325 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2022-07-04 22:10:16,331 | INFO  | Listening for connections at: mqtt://LAPTOP-IC8OJGTR:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2022-07-04 22:10:16,332 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2022-07-04 22:10:16,339 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2022-07-04 22:10:16,400 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2022-07-04 22:10:16,450 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@6cc86152{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2022-07-04 22:10:16,689 | INFO  | Listening for connections at ws://LAPTOP-IC8OJGTR:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2022-07-04 22:10:16,690 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2022-07-04 22:10:16,691 | INFO  | Apache ActiveMQ 5.17.1 (localhost, ID:LAPTOP-IC8OJGTR-55681-1656987016094-0:1) started | org.apache.activemq.broker.BrokerService | main
+2022-07-04 22:10:16,695 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2022-07-04 22:10:16,706 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\Taller3-TallerProgramacion\lib\apache-activemq-5.17.1\bin\..\data\kahadb only has 47897 mb of usable space. - resetting to maximum available disk space: 47897 mb | org.apache.activemq.broker.BrokerService | main
+2022-07-04 22:10:16,710 | WARN  | Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\Taller3-TallerProgramacion\lib\apache-activemq-5.17.1\bin\..\data only has 47897 mb of usable space. - resetting to maximum available disk space: 47897 mb | org.apache.activemq.broker.BrokerService | main
+2022-07-04 22:10:17,368 | INFO  | ActiveMQ WebConsole available at http://127.0.0.1:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2022-07-04 22:10:17,368 | INFO  | ActiveMQ Jolokia REST API available at http://127.0.0.1:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2022-07-04 22:10:18,064 | WARN  | jolokia-agent: Error while accessing access restrictor at file:C:UsersalvarDownloadsUniversidadTaller progaTalleres grupalesTaller3-TallerProgramacionlibapache-activemq-5.17.1bin..conf/jolokia-access.xml. Denying all access to MBeans for security reasons. Exception: java.io.FileNotFoundException: C:UsersalvarDownloadsUniversidadTaller progaTalleres grupalesTaller3-TallerProgramacionlibapache-activemq-5.17.1bin..conf\jolokia-access.xml (El sistema no puede encontrar la ruta especificada) | org.eclipse.jetty.server.handler.ContextHandler.api | main
+java.io.FileNotFoundException: C:UsersalvarDownloadsUniversidadTaller progaTalleres grupalesTaller3-TallerProgramacionlibapache-activemq-5.17.1bin..conf\jolokia-access.xml (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.base/java.net.URL.openStream(URL.java:1162)
+	at org.jolokia.restrictor.RestrictorFactory.lookupPolicyRestrictor(RestrictorFactory.java:119)
+	at org.jolokia.restrictor.RestrictorFactory.createRestrictor(RestrictorFactory.java:50)
+	at org.jolokia.http.AgentServlet.createRestrictor(AgentServlet.java:195)
+	at org.jolokia.http.AgentServlet.init(AgentServlet.java:135)
+	at org.eclipse.jetty.servlet.ServletHolder$Wrapper.init(ServletHolder.java:1345)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:632)
+	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:415)
+	at org.eclipse.jetty.servlet.ServletHandler.lambda$initialize$0(ServletHandler.java:731)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:755)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:379)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1449)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1414)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:916)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:288)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:524)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.security.SecurityHandler.doStart(SecurityHandler.java:411)
+	at org.eclipse.jetty.security.ConstraintSecurityHandler.doStart(ConstraintSecurityHandler.java:417)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.server.Server.start(Server.java:423)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:387)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:283)
+	at org.springframework.beans.factory.config.MethodInvokingBean.invokeWithTargetException(MethodInvokingBean.java:123)
+	at org.springframework.beans.factory.config.MethodInvokingFactoryBean.afterPropertiesSet(MethodInvokingFactoryBean.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:64)
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:52)
+	at org.apache.activemq.xbean.XBeanBrokerFactory$1.<init>(XBeanBrokerFactory.java:104)
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createApplicationContext(XBeanBrokerFactory.java:104)
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createBroker(XBeanBrokerFactory.java:67)
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:71)
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:54)
+	at org.apache.activemq.console.command.StartCommand.runTask(StartCommand.java:87)
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:63)
+	at org.apache.activemq.console.command.ShellCommand.runTask(ShellCommand.java:154)
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:63)
+	at org.apache.activemq.console.command.ShellCommand.main(ShellCommand.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.activemq.console.Main.runTaskClass(Main.java:262)
+	at org.apache.activemq.console.Main.main(Main.java:115)
+2022-07-11 12:55:08,691 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\Taller3-TallerProgramacion\lib\apache-activemq-5.17.1\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2022-07-11 12:55:08,782 | INFO  | Page File: C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\Taller3-TallerProgramacion\lib\apache-activemq-5.17.1\bin\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown.. | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2022-07-11 12:55:08,786 | INFO  | KahaDB is version 7 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2022-07-11 12:55:08,788 | INFO  | Page File: C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\Taller3-TallerProgramacion\lib\apache-activemq-5.17.1\bin\..\data\kahadb\db.data. Recovered pageFile free list of size: 0 | org.apache.activemq.store.kahadb.disk.page.PageFile | KahaDB Index Free Page Recovery
+2022-07-11 12:55:08,989 | INFO  | PListStore:[C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\Taller3-TallerProgramacion\lib\apache-activemq-5.17.1\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2022-07-11 12:55:09,141 | INFO  | Apache ActiveMQ 5.17.1 (localhost, ID:LAPTOP-IC8OJGTR-60171-1657558508998-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2022-07-11 12:55:09,222 | INFO  | Listening for connections at: tcp://LAPTOP-IC8OJGTR:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2022-07-11 12:55:09,223 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2022-07-11 12:55:09,231 | INFO  | Listening for connections at: amqp://LAPTOP-IC8OJGTR:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2022-07-11 12:55:09,231 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2022-07-11 12:55:09,238 | INFO  | Listening for connections at: stomp://LAPTOP-IC8OJGTR:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2022-07-11 12:55:09,239 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2022-07-11 12:55:09,243 | INFO  | Listening for connections at: mqtt://LAPTOP-IC8OJGTR:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2022-07-11 12:55:09,244 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2022-07-11 12:55:09,250 | INFO  | Starting Jetty server | org.apache.activemq.transport.WebTransportServerSupport | main
+2022-07-11 12:55:09,320 | INFO  | Creating Jetty connector | org.apache.activemq.transport.WebTransportServerSupport | main
+2022-07-11 12:55:09,374 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@6c3659be{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | main
+2022-07-11 12:55:09,611 | INFO  | Listening for connections at ws://LAPTOP-IC8OJGTR:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2022-07-11 12:55:09,611 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2022-07-11 12:55:09,612 | INFO  | Apache ActiveMQ 5.17.1 (localhost, ID:LAPTOP-IC8OJGTR-60171-1657558508998-0:1) started | org.apache.activemq.broker.BrokerService | main
+2022-07-11 12:55:09,616 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2022-07-11 12:55:09,626 | WARN  | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\Taller3-TallerProgramacion\lib\apache-activemq-5.17.1\bin\..\data\kahadb only has 48304 mb of usable space. - resetting to maximum available disk space: 48304 mb | org.apache.activemq.broker.BrokerService | main
+2022-07-11 12:55:09,629 | WARN  | Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: C:\Users\alvar\Downloads\Universidad\Taller proga\Talleres grupales\Taller3-TallerProgramacion\lib\apache-activemq-5.17.1\bin\..\data only has 48304 mb of usable space. - resetting to maximum available disk space: 48304 mb | org.apache.activemq.broker.BrokerService | main
+2022-07-11 12:55:10,264 | INFO  | ActiveMQ WebConsole available at http://127.0.0.1:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2022-07-11 12:55:10,265 | INFO  | ActiveMQ Jolokia REST API available at http://127.0.0.1:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | main
+2022-07-11 12:55:10,777 | WARN  | jolokia-agent: Error while accessing access restrictor at file:C:UsersalvarDownloadsUniversidadTaller progaTalleres grupalesTaller3-TallerProgramacionlibapache-activemq-5.17.1bin..conf/jolokia-access.xml. Denying all access to MBeans for security reasons. Exception: java.io.FileNotFoundException: C:UsersalvarDownloadsUniversidadTaller progaTalleres grupalesTaller3-TallerProgramacionlibapache-activemq-5.17.1bin..conf\jolokia-access.xml (El sistema no puede encontrar la ruta especificada) | org.eclipse.jetty.server.handler.ContextHandler.api | main
+java.io.FileNotFoundException: C:UsersalvarDownloadsUniversidadTaller progaTalleres grupalesTaller3-TallerProgramacionlibapache-activemq-5.17.1bin..conf\jolokia-access.xml (El sistema no puede encontrar la ruta especificada)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at java.base/java.net.URL.openStream(URL.java:1162)
+	at org.jolokia.restrictor.RestrictorFactory.lookupPolicyRestrictor(RestrictorFactory.java:119)
+	at org.jolokia.restrictor.RestrictorFactory.createRestrictor(RestrictorFactory.java:50)
+	at org.jolokia.http.AgentServlet.createRestrictor(AgentServlet.java:195)
+	at org.jolokia.http.AgentServlet.init(AgentServlet.java:135)
+	at org.eclipse.jetty.servlet.ServletHolder$Wrapper.init(ServletHolder.java:1345)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:632)
+	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:415)
+	at org.eclipse.jetty.servlet.ServletHandler.lambda$initialize$0(ServletHandler.java:731)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:755)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:379)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1449)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1414)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:916)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:288)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:524)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.security.SecurityHandler.doStart(SecurityHandler.java:411)
+	at org.eclipse.jetty.security.ConstraintSecurityHandler.doStart(ConstraintSecurityHandler.java:417)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.server.Server.start(Server.java:423)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:387)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.util.MethodInvoker.invoke(MethodInvoker.java:283)
+	at org.springframework.beans.factory.config.MethodInvokingBean.invokeWithTargetException(MethodInvokingBean.java:123)
+	at org.springframework.beans.factory.config.MethodInvokingFactoryBean.afterPropertiesSet(MethodInvokingFactoryBean.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:64)
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:52)
+	at org.apache.activemq.xbean.XBeanBrokerFactory$1.<init>(XBeanBrokerFactory.java:104)
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createApplicationContext(XBeanBrokerFactory.java:104)
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createBroker(XBeanBrokerFactory.java:67)
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:71)
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:54)
+	at org.apache.activemq.console.command.StartCommand.runTask(StartCommand.java:87)
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:63)
+	at org.apache.activemq.console.command.ShellCommand.runTask(ShellCommand.java:154)
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:63)
+	at org.apache.activemq.console.command.ShellCommand.main(ShellCommand.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.activemq.console.Main.runTaskClass(Main.java:262)
+	at org.apache.activemq.console.Main.main(Main.java:115)
