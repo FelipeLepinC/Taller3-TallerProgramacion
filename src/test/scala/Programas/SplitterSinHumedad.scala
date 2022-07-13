@@ -9,9 +9,6 @@ object SplitterSinHumedad {
   def replicar(message: Message): Unit ={
     message match {
       case obj: ObjectMessage => {
-        val queueMessage = obj.asInstanceOf[ActiveMQObjectMessage]
-        val payload = queueMessage.getObject().asInstanceOf[DatosSensor]
-
         System.setProperty ("org.apache.activemq.SERIALIZABLE_PACKAGES", "*")
         val cFactory = new ActiveMQConnectionFactory(activeMqUrl)
         cFactory.setTrustAllPackages(true)
@@ -26,14 +23,20 @@ object SplitterSinHumedad {
         val productor2 = session.createProducer(cola2)
 
         val medicion = new SeñalEstado(true)
-        val objMedicion: ObjectMessage = session.createObjectMessage(medicion)
+        val objMedicion: ObjectMessage = session.createObjectMessage()
+        objMedicion.setObject(medicion)
         productor.send(objMedicion)
         println("Señal de Encendido del Humidificador enviada")
 
-        productor2.send(obj)
-        val humedad = payload.getHumedad()
-        println(s"Registro de humedad baja ($humedad%) enviado")
+        val queueMessage = obj.asInstanceOf[ActiveMQObjectMessage]
+        val payload = queueMessage.getObject().asInstanceOf[DatosSensor]
+        val porcentaje: Int = payload.getHumedad()
 
+        val registro = new Registro(mensaje = "Poca humedad en el ambiente, se enciende el humidificador",humedad = porcentaje)
+        val objRegistro: ObjectMessage = session.createObjectMessage()
+        objRegistro.setObject(registro)
+        productor2.send(objRegistro)
+        println("Registro de Encendido de Humidificador enviado")
       }
       case _ => {
         throw new Exception("Error desconocido")

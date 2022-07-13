@@ -13,10 +13,3 @@ class DatosSensor() extends Serializable {
     return fecha
   }
 }
-
-class SeñalEstado(val flagEstado: Boolean) extends Serializable {
-  def getFlagEstado(): Boolean ={
-    return this.flagEstado
-  }
-}
-

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="httpcore-4.4.15">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../Program Files/apache-activemq-5.17.1-bin/apache-activemq-5.17.1/lib/optional/httpcore-4.4.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Program Files/apache-activemq-5.17.1-bin/apache-activemq-5.17.1/lib/optional/httpclient-4.5.13.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

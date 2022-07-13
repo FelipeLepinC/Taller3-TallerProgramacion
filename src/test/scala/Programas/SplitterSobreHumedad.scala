@@ -1,21 +1,14 @@
 package Programas
 
-import Programas.SplitterSinHumedad.activeMqUrl
-
 import javax.jms._
 import org.apache.activemq.ActiveMQConnectionFactory
 import org.apache.activemq.command.ActiveMQObjectMessage
-
-import java.util.Calendar
 
 object SplitterSobreHumedad {
   val activeMqUrl: String = "tcp://localhost:61616"
   def replicar(message: Message): Unit ={
     message match {
       case obj: ObjectMessage => {
-        val queueMessage = obj.asInstanceOf[ActiveMQObjectMessage]
-        val payload = queueMessage.getObject().asInstanceOf[DatosSensor]
-
         System.setProperty ("org.apache.activemq.SERIALIZABLE_PACKAGES", "*")
         val cFactory = new ActiveMQConnectionFactory(activeMqUrl)
         cFactory.setTrustAllPackages(true)
@@ -30,14 +23,20 @@ object SplitterSobreHumedad {
         val productor2 = session.createProducer(cola2)
 
         val medicion = new SeñalEstado(true)
-        val objMedicion: ObjectMessage = session.createObjectMessage(medicion)
+        val objMedicion: ObjectMessage = session.createObjectMessage()
+        objMedicion.setObject(medicion)
         productor.send(objMedicion)
         println("Señal de Encendido del Extractor enviada")
 
-        productor2.send(obj)
-        val humedad = payload.getHumedad()
-        println(s"Registro de humedad alta ($humedad%) enviado")
+        val queueMessage = obj.asInstanceOf[ActiveMQObjectMessage]
+        val payload = queueMessage.getObject().asInstanceOf[DatosSensor]
+        val porcentaje: Int = payload.getHumedad()
 
+        val registro = new Registro(mensaje = "Hay demasiada humedad, se enciende el extractor",humedad = porcentaje)
+        val objRegistro: ObjectMessage = session.createObjectMessage()
+        objRegistro.setObject(registro)
+        productor2.send(objRegistro)
+        println("Registro de Encendido de Extractor enviado")
       }
       case _ => {
         throw new Exception("Error desconocido")
